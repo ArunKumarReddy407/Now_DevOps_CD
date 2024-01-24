@@ -17,7 +17,7 @@ jobs:
              git clone https://.:${{ secrets.BUILD_REPO_PERSONAL_ACCESS_TOKEN }}@github.com/ArunKumarReddy407/buildmetadata target
              cd target
              a=1
-             for i in `grep -iR "7.0.0" release/* | grep -v semantic | cut -d ":" -f1`
+             for i in `grep -iR "8.0.0" release/* | grep -v semantic | cut -d ":" -f1`
              do
                echo $i
                art1=$(cat $i | grep -i artifact | cut -d ":" -f2)
